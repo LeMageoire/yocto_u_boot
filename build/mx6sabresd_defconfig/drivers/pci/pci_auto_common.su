@@ -1,0 +1,4 @@
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/drivers/pci/pci_auto_common.c:20:6:pciauto_region_init	0	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/drivers/pci/pci_auto_common.c:31:6:pciauto_region_align	0	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/drivers/pci/pci_auto_common.c:36:5:pciauto_region_allocate	12	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/drivers/pci/pci_auto_common.c:84:6:pciauto_config_init	16	static

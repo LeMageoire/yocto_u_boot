@@ -1,0 +1,5 @@
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/arch/arm/lib/cache-pl310.c:21:13:pl310_background_op_all_ways	0	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/arch/arm/lib/cache-pl310.c:41:6:v7_outer_cache_inval_all	0	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/arch/arm/lib/cache-pl310.c:46:6:v7_outer_cache_flush_all	0	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/arch/arm/lib/cache-pl310.c:52:6:v7_outer_cache_flush_range	0	static
+/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/arch/arm/lib/cache-pl310.c:70:6:v7_outer_cache_inval_range	16	static

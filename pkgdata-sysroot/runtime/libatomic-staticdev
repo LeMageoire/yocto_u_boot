@@ -1,0 +1,13 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libatomic-staticdev: GNU C++11 atomics support library - static development files
+SECTION: devel
+PKG:libatomic-staticdev: libatomic-staticdev
+FILES:libatomic-staticdev: /usr/lib/libatomic.a
+FILES_INFO:libatomic-staticdev: {"/usr/lib/libatomic.a": 209010}
+PKGSIZE:libatomic-staticdev: 209010

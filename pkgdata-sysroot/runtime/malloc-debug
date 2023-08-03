@@ -1,0 +1,20 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION: The GNU C Library is used as the system C library in most systems with the Linux kernel.
+SUMMARY: GLIBC (GNU C Library)
+RDEPENDS:malloc-debug: glibc (>= 2.35)
+RPROVIDES:malloc-debug:  malloc-debug (=2.35)
+SECTION: libs
+PKG:malloc-debug: libc-malloc-debug0
+FILES:malloc-debug: /lib/libc_malloc_debug.so.0
+FILES_INFO:malloc-debug: {"/lib/libc_malloc_debug.so.0": 31328}
+pkg_postinst:malloc-debug: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:malloc-debug: /lib/libc@underscore@malloc@underscore@debug.so.0
+FILERPROVIDES:/lib/libc@underscore@malloc@underscore@debug.so.0:malloc-debug:  libc_malloc_debug.so.0(GLIBC_2.4) libc_malloc_debug.so.0(GLIBC_2.10) libc_malloc_debug.so.0(GLIBC_2.10) libc_malloc_debug.so.0(GLIBC_2.16) libc_malloc_debug.so.0(GLIBC_2.16) libc_malloc_debug.so.0(GLIBC_2.33) libc_malloc_debug.so.0(GLIBC_2.33) libc_malloc_debug.so.0
+FILERDEPENDSFLIST:malloc-debug: /lib/libc@underscore@malloc@underscore@debug.so.0
+FILERDEPENDS:/lib/libc@underscore@malloc@underscore@debug.so.0:malloc-debug:  ld-linux-armhf.so.3(GLIBC_PRIVATE) libc.so.6(GLIBC_2.30) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE) libc.so.6 ld-linux-armhf.so.3
+PKGSIZE:malloc-debug: 31328

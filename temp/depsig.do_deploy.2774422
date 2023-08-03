@@ -1,0 +1,19 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:u-boot-fslc:imx6qdlsabresd-poky-linux-gnueabi:2022.10+gitAUTOINC+cbd7eb17ac:r0:imx6qdlsabresd:10:
+task=deploy
+drwx                                                                                       .
+drwx                                                                                       ./deploy-u-boot-fslc
+lrwx                                                                                       ./deploy-u-boot-fslc/SPL -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwx                                                                                       ./deploy-u-boot-fslc/SPL-imx6qdlsabresd -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwx                                                                                       ./deploy-u-boot-fslc/SPL-imx6qdlsabresd-sd -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwx                                                                                       ./deploy-u-boot-fslc/SPL-sd -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-                44032 43c14b6a58377a70ea369b01e21d68567f23b1e30bf85114b808d25b170e4696 ./deploy-u-boot-fslc/SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwx                                                                                       ./deploy-u-boot-fslc/u-boot-fslc-initial-env-imx6qdlsabresd-sd -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-                 3760 c584548fd1231f2e6a37248e5c19b1ccee9bd27a1334019bbba8998055800be5 ./deploy-u-boot-fslc/u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwx                                                                                       ./deploy-u-boot-fslc/u-boot-fslc-initial-env-sd -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwx                                                                                       ./deploy-u-boot-fslc/u-boot-imx6qdlsabresd.img -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwx                                                                                       ./deploy-u-boot-fslc/u-boot-imx6qdlsabresd.img-sd -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+-rw-               712720 67093d2cbd8fa2f6f397676a205a6e6ef016d9a41fb2914b70bc85dbc15a6cff ./deploy-u-boot-fslc/u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwx                                                                                       ./deploy-u-boot-fslc/u-boot.img -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwx                                                                                       ./deploy-u-boot-fslc/u-boot.img-sd -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img

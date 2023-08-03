@@ -1,0 +1,13 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION:gcc-runtime-src: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.  This package contains sources for debugging purposes.
+SUMMARY:gcc-runtime-src: Runtime libraries from GCC - Source files
+SECTION:gcc-runtime-src: devel
+PKG:gcc-runtime-src: gcc-runtime-src
+FILES:gcc-runtime-src: /usr/src/debug
+FILES_INFO:gcc-runtime-src: {}
+PKGSIZE:gcc-runtime-src: 0

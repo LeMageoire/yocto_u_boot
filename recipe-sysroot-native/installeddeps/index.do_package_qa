@@ -1,0 +1,11 @@
+TaskDeps: do_package do_packagedata do_install do_create_extlinux_config do_compile do_configure do_prepare_recipe_sysroot do_patch do_deploy_source_date_epoch do_unpack do_fetch
+binutils-cross-arm
+flex-native
+gettext-minimal-native
+gnu-config-native
+libtool-native
+m4-native
+pseudo-native
+texinfo-dummy-native
+xz-native
+zlib-native

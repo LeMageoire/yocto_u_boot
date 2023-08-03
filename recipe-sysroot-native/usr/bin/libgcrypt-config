@@ -1,0 +1,4 @@
+#!/bin/sh
+echo 'ERROR: /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native/usr/bin/libgcrypt-config should not be used, use an alternative such as pkg-config' >&2
+echo '--should-not-have-used-/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native/usr/bin/libgcrypt-config'
+exit 1

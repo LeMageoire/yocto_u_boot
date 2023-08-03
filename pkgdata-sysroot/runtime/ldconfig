@@ -1,0 +1,13 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION: The GNU C Library is used as the system C library in most systems with the Linux kernel.
+SUMMARY: GLIBC (GNU C Library)
+SECTION: libs
+PKG:ldconfig: ldconfig
+FILES:ldconfig: /sbin/ldconfig
+FILES_INFO:ldconfig: {"/sbin/ldconfig": 497556}
+PKGSIZE:ldconfig: 497556

@@ -1,0 +1,14 @@
+PN: u-boot-fslc
+PV: 2022.10+gitAUTOINC+cbd7eb17ac
+PR: r0
+PKGV: 2022.10+git@PRSERV_PV_AUTOINC@+cbd7eb17ac
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: GPL-2.0-or-later
+DESCRIPTION:u-boot-fslc-dbg: U-Boot based on mainline U-Boot used by FSL Community BSP in order to provide support for some backported features and fixes, or because it was submitted for revision and it takes some time to become part of a stable version, or because it is not applicable for upstreaming.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY:u-boot-fslc-dbg: Universal Boot Loader for embedded devices - Debugging files
+SECTION:u-boot-fslc-dbg: devel
+PKG:u-boot-fslc-dbg: u-boot-fslc-dbg
+ALLOW_EMPTY:u-boot-fslc-dbg: 1
+FILES:u-boot-fslc-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO:u-boot-fslc-dbg: {}
+PKGSIZE:u-boot-fslc-dbg: 0

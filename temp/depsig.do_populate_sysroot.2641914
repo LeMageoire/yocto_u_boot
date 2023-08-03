@@ -1,0 +1,14 @@
+OEOuthashBasic
+14
+gcc-runtime: 02c6f1ec80943c694ead03de9758e3b8fcf85ab9774c5caf0ab3392fd71d769f
+glibc: 7c7fe16027c13b5907970d04fa019f18405d1286f3809cd1355b40eba22f6a80
+libgcc: 256f505976ef980c34b0c0536ecb401244a4be451ffdc4d4959112210b851265
+linux-libc-headers: e1bc5200f551d1fefca54f92d6c9a04e6f2da64f1b8144b551047c3917b25d99
+SSTATE_PKGSPEC=sstate:u-boot-fslc:imx6qdlsabresd-poky-linux-gnueabi:2022.10+gitAUTOINC+cbd7eb17ac:r0:imx6qdlsabresd:10:
+task=populate_sysroot
+drwx                                                                                       .
+drwx                                                                                       ./sysroot-destdir
+drwx                                                                                       ./sysroot-destdir/sysroot-providers
+-rw-                   11 dcccd9801c4622e3d522f15273fba9b3061fb0d7e42cdd340e26d626185c4377 ./sysroot-destdir/sysroot-providers/u-boot
+-rw-                   11 dcccd9801c4622e3d522f15273fba9b3061fb0d7e42cdd340e26d626185c4377 ./sysroot-destdir/sysroot-providers/u-boot-fslc
+-rw-                   11 dcccd9801c4622e3d522f15273fba9b3061fb0d7e42cdd340e26d626185c4377 ./sysroot-destdir/sysroot-providers/virtual_bootloader

@@ -1,0 +1,14 @@
+PN: libgcc
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception & GPL-3.0-only
+DESCRIPTION:libgcc-src: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.  This package contains sources for debugging purposes.
+SUMMARY:libgcc-src: GNU cc and gcc C compilers - Source files
+RPROVIDES:libgcc-src:  libgcc-src (=11.3.0)
+SECTION:libgcc-src: devel
+PKG:libgcc-src: libgcc-s-src
+FILES:libgcc-src: /usr/src/debug
+FILES_INFO:libgcc-src: {"/usr/src/debug/libgcc/11.3.0-r0/build/gcc/arm-isa.h": 12866, "/usr/src/debug/libgcc/11.3.0-r0/build/libgcc/enable-execute-stack.c": 236, "/usr/src/debug/libgcc/11.3.0-r0/build/libgcc/gthr-default.h": 24219, "/usr/src/debug/libgcc/11.3.0-r0/build/libgcc/unwind.h": 3862}
+PKGSIZE:libgcc-src: 41183

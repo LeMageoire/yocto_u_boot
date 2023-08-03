@@ -1,0 +1,15 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION:gcc-runtime-dbg: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY:gcc-runtime-dbg: Runtime libraries from GCC - Debugging files
+RRECOMMENDS:gcc-runtime-dbg: glibc-dbg libgcc-dbg
+SECTION:gcc-runtime-dbg: devel
+PKG:gcc-runtime-dbg: gcc-runtime-dbg
+ALLOW_EMPTY:gcc-runtime-dbg: 1
+FILES:gcc-runtime-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug     /usr/lib/libstdc++.*-gdb.py     /usr/share/gcc-11.3.0/python/libstdcxx 
+FILES_INFO:gcc-runtime-dbg: {"/usr/lib/.debug/libatomic.so.1.2.0": 79556, "/usr/lib/.debug/libgomp.so.1.0.0": 949700, "/usr/lib/.debug/libitm.so.1.0.0": 787720, "/usr/lib/.debug/libstdc++.so.6.0.29": 14457140, "/usr/lib/libstdc++.so.6.0.29-gdb.py": 2377, "/usr/share/gcc-11.3.0/python/libstdcxx/__init__.py": 1, "/usr/share/gcc-11.3.0/python/libstdcxx/v6/__init__.py": 1161, "/usr/share/gcc-11.3.0/python/libstdcxx/v6/printers.py": 82703, "/usr/share/gcc-11.3.0/python/libstdcxx/v6/xmethods.py": 28188}
+PKGSIZE:gcc-runtime-dbg: 16388546

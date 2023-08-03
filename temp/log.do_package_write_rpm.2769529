@@ -1,0 +1,103 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/rpm/rpm_4.17.1.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: []
+NOTE: Skipping as already exists in sysroot: ['pseudo-native', 'rpm-native', 'gettext-minimal-native', 'libtool-native', 'file-native', 'sqlite3-native', 'elfutils-native', 'lua-native', 'libgcrypt-native', 'python3-native', 'xz-native', 'bzip2-native', 'popt-native', 'zstd-native', 'texinfo-dummy-native', 'zlib-native', 'libarchive-native', 'curl-native', 'libmicrohttpd-native', 'readline-native', 'libgpg-error-native', 'libcap-native', 'gdbm-native', 'openssl-native', 'libtirpc-native', 'libffi-native', 'util-linux-libuuid-native', 'libnsl2-native', 'ncurses-native', 'attr-native', 'lzo-native', 'gnutls-native', 'perl-native', 'libunistring-native', 'gmp-native', 'libidn2-native', 'nettle-native', 'make-native']
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function do_package_write_rpm
+DEBUG: Executing python function read_subpackage_metadata
+DEBUG: Python function read_subpackage_metadata finished
+DEBUG: Executing python function do_package_rpm
+DEBUG: Executing python function write_specfile
+NOTE: Not creating empty RPM package for u-boot-fslc-src
+NOTE: Creating empty RPM package for u-boot-fslc-dbg
+NOTE: Not creating empty RPM package for u-boot-fslc-staticdev
+NOTE: Creating empty RPM package for u-boot-fslc-dev
+NOTE: Not creating empty RPM package for u-boot-fslc-doc
+NOTE: Not creating empty RPM package for u-boot-fslc-locale
+NOTE: Creating RPM package for u-boot-fslc-env
+NOTE: Not creating empty RPM package for u-boot-fslc-extlinux
+NOTE: Creating RPM package for u-boot-fslc
+DEBUG: Python function write_specfile finished
+DEBUG: PKGWRITEDIR: /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms/imx6qdlsabresd
+DEBUG: Executing shell function BUILDSPEC
+Building target platforms: imx6qdlsabresd-poky-linux
+Building for target imx6qdlsabresd-poky-linux
+Processing files: u-boot-fslc-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Finding  OrderWithRequires: 
+Provides: u-boot-fslc = 2022.10+git0+cbd7eb17ac-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: u-boot-fslc-dbg-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd
+Processing files: u-boot-fslc-dev-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd
+Processing files: u-boot-fslc-env-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd
+warning: Deprecated external dependency generator is used!
+Finding  Provides: 
+Finding  Requires(interp): 
+Finding  Requires(rpmlib): 
+Finding  Requires(verify): 
+Finding  Requires(pre): 
+Finding  Requires(post): 
+Finding  Requires(preun): 
+Finding  Requires(postun): 
+Finding  Requires(pretrans): 
+Finding  Requires(posttrans): 
+Finding  Requires: 
+Finding  Conflicts: 
+Finding  Obsoletes: 
+Finding  Recommends: 
+Finding  Suggests: 
+Finding  Supplements: 
+Finding  Enhances: 
+Finding  OrderWithRequires: 
+Provides: u-boot-default-env u-boot-fslc-env = 2022.10+git0+cbd7eb17ac-r0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native/usr/bin/../../usr/lib/rpm/check-files /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/package
+Wrote: /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms/imx6qdlsabresd/u-boot-fslc-dbg-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+Wrote: /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms/imx6qdlsabresd/u-boot-fslc-dev-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+Wrote: /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms/imx6qdlsabresd/u-boot-fslc-env-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+Wrote: /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms/imx6qdlsabresd/u-boot-fslc-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+
+RPM build warnings:
+    Deprecated external dependency generator is used!
+    Deprecated external dependency generator is used!
+DEBUG: Shell function BUILDSPEC finished
+DEBUG: Python function do_package_rpm finished
+DEBUG: Python function do_package_write_rpm finished
+DEBUG: Executing python function sstate_task_postfunc
+NOTE: Using umask 0o002 (not 22) for sstate packaging
+DEBUG: Preparing tree /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms for packaging at /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/sstate-build-package_write_rpm/deploy-rpms
+DEBUG: Executing python function target_add_sysroot_deps
+DEBUG: Python function target_add_sysroot_deps finished
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/sstate-build-package_write_rpm/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" \) -type f | xargs grep -l -e '/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot' -e '/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native' -e '/home/lemageoire/fsl-community-bsp/build-openrex/tmp/hosttools' | tee /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/sstate-build-package_write_rpm/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing python function sstate_report_unihash
+DEBUG: Reported task a0cafe861addcd1bbf01d3b8c38c9be97b2fce98d1c6618b4d7e06d79a5ef3de as unihash a0cafe861addcd1bbf01d3b8c38c9be97b2fce98d1c6618b4d7e06d79a5ef3de to unix:///home/lemageoire/fsl-community-bsp/build-openrex/hashserve.sock
+DEBUG: Python function sstate_report_unihash finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Executing python function uninative_changeinterp
+DEBUG: Python function uninative_changeinterp finished
+DEBUG: Staging files from /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/deploy-rpms to /home/lemageoire/fsl-community-bsp/build-openrex/tmp/deploy/rpm
+DEBUG: Python function sstate_task_postfunc finished

@@ -1,0 +1,7 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:u-boot-fslc:imx6qdlsabresd-poky-linux-gnueabi:2022.10+gitAUTOINC+cbd7eb17ac:r0:imx6qdlsabresd:10:
+task=deploy_source_date_epoch
+drwx                                                                                       .
+drwx                                                                                       ./deploy-source-date-epoch
+-rw-                   10 059e21b5ca8a89e31e1502282107c39ff0a6b2f50cb6e846ea72bdd26e859597 ./deploy-source-date-epoch/__source_date_epoch.txt

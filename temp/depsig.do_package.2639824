@@ -1,0 +1,78 @@
+OEOuthashBasic
+14
+gcc-runtime: 02c6f1ec80943c694ead03de9758e3b8fcf85ab9774c5caf0ab3392fd71d769f
+glibc: 7c7fe16027c13b5907970d04fa019f18405d1286f3809cd1355b40eba22f6a80
+libgcc: 256f505976ef980c34b0c0536ecb401244a4be451ffdc4d4959112210b851265
+linux-libc-headers: e1bc5200f551d1fefca54f92d6c9a04e6f2da64f1b8144b551047c3917b25d99
+SSTATE_PKGSPEC=sstate:u-boot-fslc:imx6qdlsabresd-poky-linux-gnueabi:2022.10+gitAUTOINC+cbd7eb17ac:r0:imx6qdlsabresd:10:
+task=package
+drwxr-xr-x       root       root 1670892157                                                                                       ./package
+drwxr-xr-x       root       root 1670892157                                                                                       ./package/boot
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/boot/SPL -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/boot/SPL-sd -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-r--r--       root       root 1670892157                44032 43c14b6a58377a70ea369b01e21d68567f23b1e30bf85114b808d25b170e4696 ./package/boot/SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-r--r--       root       root 1670892157               712720 67093d2cbd8fa2f6f397676a205a6e6ef016d9a41fb2914b70bc85dbc15a6cff ./package/boot/u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/boot/u-boot.img -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/boot/u-boot.img-sd -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+drwxr-xr-x       root       root 1670892157                                                                                       ./package/etc
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/etc/u-boot-fslc-initial-env -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/etc/u-boot-fslc-initial-env-imx6qdlsabresd-sd -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-r--r--       root       root 1670892157                 3760 c584548fd1231f2e6a37248e5c19b1ccee9bd27a1334019bbba8998055800be5 ./package/etc/u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwxrwxrwx       root       root 1670892157                                                                                       ./package/etc/u-boot-fslc-initial-env-sd -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+drwxr-xr-x       root       root 1670892157                                                                                       ./packages-split
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc
+drwxr-xr-x       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc/boot
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc/boot/SPL -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc/boot/SPL-sd -> SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-r--r--       root       root 1670892157                44032 43c14b6a58377a70ea369b01e21d68567f23b1e30bf85114b808d25b170e4696 ./packages-split/u-boot-fslc/boot/SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-r--r--       root       root 1670892157               712720 67093d2cbd8fa2f6f397676a205a6e6ef016d9a41fb2914b70bc85dbc15a6cff ./packages-split/u-boot-fslc/boot/u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc/boot/u-boot.img -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc/boot/u-boot.img-sd -> u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-dbg
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-dev
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-doc
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-env
+drwxr-xr-x       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-env/etc
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-env/etc/u-boot-fslc-initial-env -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-env/etc/u-boot-fslc-initial-env-imx6qdlsabresd-sd -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+-rw-r--r--       root       root 1670892157                 3760 c584548fd1231f2e6a37248e5c19b1ccee9bd27a1334019bbba8998055800be5 ./packages-split/u-boot-fslc-env/etc/u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+lrwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-env/etc/u-boot-fslc-initial-env-sd -> u-boot-fslc-initial-env-imx6qdlsabresd-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-extlinux
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-locale
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-src
+drwxrwxrwx       root       root 1670892157                                                                                       ./packages-split/u-boot-fslc-staticdev
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata
+-rw-r--r--       root       root 1670892157                  164 eb933890027ab5fc432fd1abd0aaf727ddcb9575ee3f37627372e8a66fb7864b ./pkgdata/u-boot-fslc
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata/extended
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-dbg.json.zstd
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-dev.json.zstd
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-doc.json.zstd
+-rw-r--r--       root       root 1670892157                  148 6e7f54066127cd12ae224c79738e9b423bc5d4710dc052b6fcb76bb62497df39 ./pkgdata/extended/u-boot-fslc-env.json.zstd
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-extlinux.json.zstd
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-locale.json.zstd
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-src.json.zstd
+-rw-r--r--       root       root 1670892157                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata/extended/u-boot-fslc-staticdev.json.zstd
+-rw-r--r--       root       root 1670892157                  155 f33c0def6dc1943a317df718e4cc488e975a11d3da81798f06907e206d2290a2 ./pkgdata/extended/u-boot-fslc.json.zstd
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata/runtime
+-rw-r--r--       root       root 1670892157                  872 281917a2f91342c2cf2339b1f9c78b90fb354c553ec71116bbeb276feee049d6 ./pkgdata/runtime/u-boot-fslc
+-rw-r--r--       root       root 1670892157                  855 1a5af0bbd66e04638637eb90b2dc09dc6fd9427557c23b22bed46d4baa99850a ./pkgdata/runtime/u-boot-fslc-dbg
+-rw-r--r--       root       root 1670892157                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata/runtime/u-boot-fslc-dbg.packaged
+-rw-r--r--       root       root 1670892157                 1253 eeaaa816fa3236eed43f6e15545e2ba09148eeea341f2d0fda2c508564602848 ./pkgdata/runtime/u-boot-fslc-dev
+-rw-r--r--       root       root 1670892157                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata/runtime/u-boot-fslc-dev.packaged
+-rw-r--r--       root       root 1670892157                  832 36d844bf4b5c038b14086896a18f0b52d04e2930dccb7459d317ef2e5682e22d ./pkgdata/runtime/u-boot-fslc-doc
+-rw-r--r--       root       root 1670892157                  982 b8a0bc27f6e048d5a1959ab3fa22920b499afed154ab300fb3f579e75222fdce ./pkgdata/runtime/u-boot-fslc-env
+-rw-r--r--       root       root 1670892157                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata/runtime/u-boot-fslc-env.packaged
+-rw-r--r--       root       root 1670892157                  680 c1f7f8f74423b8c17792ce42a9a8695d2ce669c6f762ce5cc51b17089d4e8baf ./pkgdata/runtime/u-boot-fslc-extlinux
+-rw-r--r--       root       root 1670892157                  659 66015d1e6459c8d26c4acf35bfd844e8ba02a7e00bfb8925b5dfe417c66c7d32 ./pkgdata/runtime/u-boot-fslc-locale
+-rw-r--r--       root       root 1670892157                  760 1d5c59c3ea5b8f5b7c3969e6810e3b34bbf43a7658f9ff68f915dc80f1fc7dd8 ./pkgdata/runtime/u-boot-fslc-src
+-rw-r--r--       root       root 1670892157                  986 bcb019738f1dce40c97d06bc55787b6de766a54320c21c7cb02e802eb8745166 ./pkgdata/runtime/u-boot-fslc-staticdev
+-rw-r--r--       root       root 1670892157                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata/runtime/u-boot-fslc.packaged
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata/runtime-reverse
+lrwxrwxrwx       root       root 1670892157                                                                                       ./pkgdata/runtime-reverse/u-boot-fslc -> ../runtime/u-boot-fslc
+lrwxrwxrwx       root       root 1670892157                                                                                       ./pkgdata/runtime-reverse/u-boot-fslc-dbg -> ../runtime/u-boot-fslc-dbg
+lrwxrwxrwx       root       root 1670892157                                                                                       ./pkgdata/runtime-reverse/u-boot-fslc-dev -> ../runtime/u-boot-fslc-dev
+lrwxrwxrwx       root       root 1670892157                                                                                       ./pkgdata/runtime-reverse/u-boot-fslc-env -> ../runtime/u-boot-fslc-env
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata/runtime-rprovides
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata/runtime-rprovides/u-boot-default-env
+lrwxrwxrwx       root       root 1670892157                                                                                       ./pkgdata/runtime-rprovides/u-boot-default-env/u-boot-fslc-env -> ../../runtime/u-boot-fslc-env
+drwxr-xr-x       root       root 1670892157                                                                                       ./pkgdata/shlibs2

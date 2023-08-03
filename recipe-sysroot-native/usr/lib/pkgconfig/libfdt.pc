@@ -1,0 +1,9 @@
+prefix=${pcfiledir}/../../../usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libfdt
+Description: Flat Device Tree manipulation
+Version: 1.6.0
+Libs: -L${libdir} -lfdt
+Cflags: -I${includedir}

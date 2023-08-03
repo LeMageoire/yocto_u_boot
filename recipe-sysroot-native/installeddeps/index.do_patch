@@ -1,0 +1,7 @@
+TaskDeps: do_unpack do_fetch
+attr-native
+gettext-minimal-native
+libtool-native
+patch-native
+quilt-native
+texinfo-dummy-native

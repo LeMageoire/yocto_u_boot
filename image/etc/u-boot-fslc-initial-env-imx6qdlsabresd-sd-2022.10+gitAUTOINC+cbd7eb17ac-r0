@@ -1,0 +1,41 @@
+baudrate=115200
+boot_fdt=try
+bootcmd=run findfdt;mmc dev ${mmcdev};if mmc rescan; then if run loadbootscript; then run bootscript; else if run loadimage; then run mmcboot; else run netboot; fi; fi; else run netboot; fi
+bootdelay=2
+bootscript=echo Running bootscript from mmc ...; source
+console=ttymxc0
+dfu_alt_info=spl raw 0x400
+dfu_alt_info_img=u-boot raw 0x10000
+dfu_alt_info_spl=spl raw 0x400
+dfuspi=dfu 0 sf 0:0:10000000:0
+emmcdev=2
+fb=0
+fdt_addr=0x18000000
+fdt_high=0xffffffff
+fdtfile=undefined
+findfdt=if test $fdtfile = undefined; then if test $board_name = SABREAUTO && test $board_rev = MX6QP; then setenv fdtfile imx6qp-sabreauto.dtb; fi; if test $board_name = SABREAUTO && test $board_rev = MX6Q; then setenv fdtfile imx6q-sabreauto.dtb; fi; if test $board_name = SABREAUTO && test $board_rev = MX6DL; then setenv fdtfile imx6dl-sabreauto.dtb; fi; if test $board_name = SABRESD && test $board_rev = MX6QP; then setenv fdtfile imx6qp-sabresd.dtb; fi; if test $board_name = SABRESD && test $board_rev = MX6Q; then setenv fdtfile imx6q-sabresd.dtb; fi; if test $board_name = SABRESD && test $board_rev = MX6DL; then setenv fdtfile imx6dl-sabresd.dtb; fi; if test $fdtfile = undefined; then echo WARNING: Could not determine dtb to use; fi; fi;
+finduuid=part uuid mmc ${mmcdev}:2 uuid
+image=zImage
+initrd_high=0xffffffff
+ip_dyn=yes
+loadaddr=0x12000000
+loadbootscript=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script} || load mmc ${mmcdev}:${mmcpart} ${loadaddr} boot/${script};
+loadfdt=load mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdtfile} || load mmc ${mmcdev}:${mmcpart} ${fdt_addr} boot/${fdtfile}
+loadimage=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image} || load mmc ${mmcdev}:${mmcpart} ${loadaddr} boot/${image}
+mmcargs=setenv bootargs console=${console},${baudrate} root=PARTUUID=${uuid} rootwait rw ${video_args}
+mmcboot=echo Booting from mmc ...; run finduuid; run video_args_script; run mmcargs; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if run loadfdt; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+mmcdev=1
+mmcpart=1
+mtdids=
+mtdparts=
+netargs=setenv bootargs console=${console},${baudrate} root=/dev/nfs ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp
+netboot=echo Booting from net ...; run netargs; if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; ${get_cmd} ${image}; if test ${boot_fdt} = yes || test ${boot_fdt} = try; then if ${get_cmd} ${fdt_addr} ${fdtfile}; then bootz ${loadaddr} - ${fdt_addr}; else if test ${boot_fdt} = try; then bootz; else echo WARN: Cannot load the DT; fi; fi; else bootz; fi;
+preboot=if hdmidet; then setenv video_interfaces hdmi lvds; else setenv video_interfaces lvds hdmi; fi;
+script=boot.scr
+splashimage=0x12000000
+update_emmc_firmware=if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; if ${get_cmd} ${update_sd_firmware_filename}; then if mmc dev ${emmcdev} 1; then setexpr fw_sz ${filesize} / 0x200; setexpr fw_sz ${fw_sz} + 1; mmc write ${loadaddr} 0x2 ${fw_sz}; fi; fi
+update_sd_firmware=if test ${ip_dyn} = yes; then setenv get_cmd dhcp; else setenv get_cmd tftp; fi; if mmc dev ${mmcdev}; then if ${get_cmd} ${update_sd_firmware_filename}; then setexpr fw_sz ${filesize} / 0x200; setexpr fw_sz ${fw_sz} + 1; mmc write ${loadaddr} 0x2 ${fw_sz}; fi; fi
+video_args_hdmi=setenv video_args $video_args video=mxcfb${fb}:dev=hdmi,1280x720M@60,if=RGB24
+video_args_lcd=setenv video_args $video_args video=mxcfb${fb}:dev=lcd,CLAA-WVGA,if=RGB666
+video_args_lvds=setenv video_args $video_args video=mxcfb${fb}:dev=ldb,LDB-XGA,if=RGB666
+video_args_script=for v in ${video_interfaces}; do run video_args_${v}; setexpr fb $fb + 1; done

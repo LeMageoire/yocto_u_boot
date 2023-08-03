@@ -1,0 +1,98 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-core/glibc/glibc_2.35.bb:do_populate_sysroot', '/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/gcc/gcc-cross_11.3.bb:do_populate_sysroot', '/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/gcc/gcc-runtime_11.3.bb:do_populate_sysroot', '/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', '/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-connectivity/openssl/openssl_3.0.9.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/bison/bison_3.8.2.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/flex/flex_2.6.4.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/python/python3-setuptools_59.5.0.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/python/python3_3.10.9.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/rpm/rpm_4.17.1.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/swig/swig_4.0.2.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-extended/bc/bc_1.07.1.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-kernel/dtc/dtc_1.6.1.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['dwarfsrcfiles-native', 'rpm-native', 'elfutils-native', 'libgcrypt-native', 'lua-native', 'popt-native', 'file-native', 'libmicrohttpd-native', 'libarchive-native', 'curl-native', 'libcap-native', 'libgpg-error-native', 'gnutls-native', 'lzo-native', 'nettle-native', 'libunistring-native', 'libidn2-native']
+NOTE: Skipping as already exists in sysroot: ['glibc', 'gcc-cross-arm', 'gcc-runtime', 'quilt-native', 'kern-tools-native', 'openssl-native', 'bison-native', 'flex-native', 'patch-native', 'pseudo-native', 'python3-setuptools-native', 'python3-native', 'swig-native', 'bc-native', 'dtc-native', 'libpcre-native', 'libtool-native', 'texinfo-dummy-native', 'gettext-minimal-native', 'm4-native', 'xz-native', 'gdbm-native', 'readline-native', 'libffi-native', 'ncurses-native', 'sqlite3-native', 'libnsl2-native', 'zlib-native', 'libtirpc-native', 'bzip2-native', 'util-linux-libuuid-native', 'python3-installer-native', 'python3-wheel-native', 'perl-native', 'attr-native', 'zstd-native', 'linux-libc-headers', 'gnu-config-native', 'mpfr-native', 'binutils-cross-arm', 'libmpc-native', 'gmp-native', 'libgcc', 'unzip-native', 'python3-flit-core-native', 'make-native']
+DEBUG: sed -e 's:^[^/]*/:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native/:g' /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/rpm-native/fixmepath /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/elfutils-native/fixmepath /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/libgcrypt-native/fixmepath /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/lua-native/fixmepath /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/curl-native/fixmepath /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/libgpg-error-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/pkgdata/imx6qdlsabresd:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/temp/fifo.2639824:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function sstate_task_prefunc
+DEBUG: Python function sstate_task_prefunc finished
+DEBUG: Executing python function do_package
+DEBUG: Executing python function package_convert_pr_autoinc
+DEBUG: Python function package_convert_pr_autoinc finished
+DEBUG: Executing python function package_prepare_pkgdata
+NOTE: Installed into pkgdata-sysroot: ['glibc', 'gcc-runtime', 'linux-libc-headers', 'libgcc']
+DEBUG: Python function package_prepare_pkgdata finished
+DEBUG: Executing python function perform_packagecopy
+DEBUG: Python function perform_packagecopy finished
+DEBUG: Executing python function split_and_strip_files
+DEBUG: Python function split_and_strip_files finished
+DEBUG: Executing python function fixup_perms
+DEBUG: Python function fixup_perms finished
+DEBUG: Executing python function package_do_split_locales
+DEBUG: No locale files in this package
+DEBUG: Python function package_do_split_locales finished
+DEBUG: Executing python function populate_packages
+DEBUG: Python function populate_packages finished
+DEBUG: Executing python function package_fixsymlinks
+DEBUG: Python function package_fixsymlinks finished
+DEBUG: Executing python function package_name_hook
+DEBUG: Executing python function debian_package_name_hook
+DEBUG: LIBNAMES: pkg u-boot-fslc-staticdev libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-src libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-locale libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-extlinux libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-env libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-doc libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-dev libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc-dbg libs 0 bins 0 sonames []
+DEBUG: LIBNAMES: pkg u-boot-fslc libs 0 bins 0 sonames []
+DEBUG: Python function debian_package_name_hook finished
+DEBUG: Python function package_name_hook finished
+DEBUG: Executing python function package_do_filedeps
+DEBUG: Python function package_do_filedeps finished
+DEBUG: Executing python function package_do_shlibs
+DEBUG: Reading shlib providers in /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/pkgdata-sysroot/shlibs2
+DEBUG: calculating shlib provides for u-boot-fslc-src
+DEBUG: LIBNAMES: pkg u-boot-fslc-src sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-dbg
+DEBUG: LIBNAMES: pkg u-boot-fslc-dbg sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-staticdev
+DEBUG: LIBNAMES: pkg u-boot-fslc-staticdev sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-dev
+DEBUG: LIBNAMES: pkg u-boot-fslc-dev sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-doc
+DEBUG: LIBNAMES: pkg u-boot-fslc-doc sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-locale
+DEBUG: LIBNAMES: pkg u-boot-fslc-locale sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-env
+DEBUG: LIBNAMES: pkg u-boot-fslc-env sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc-extlinux
+DEBUG: LIBNAMES: pkg u-boot-fslc-extlinux sonames set()
+DEBUG: calculating shlib provides for u-boot-fslc
+DEBUG: LIBNAMES: pkg u-boot-fslc sonames set()
+DEBUG: calculating shlib requirements for u-boot-fslc-src
+DEBUG: calculating shlib requirements for u-boot-fslc-dbg
+DEBUG: calculating shlib requirements for u-boot-fslc-staticdev
+DEBUG: calculating shlib requirements for u-boot-fslc-dev
+DEBUG: calculating shlib requirements for u-boot-fslc-doc
+DEBUG: calculating shlib requirements for u-boot-fslc-locale
+DEBUG: calculating shlib requirements for u-boot-fslc-env
+DEBUG: calculating shlib requirements for u-boot-fslc-extlinux
+DEBUG: calculating shlib requirements for u-boot-fslc
+DEBUG: Python function package_do_shlibs finished
+DEBUG: Executing python function package_do_pkgconfig
+DEBUG: Python function package_do_pkgconfig finished
+DEBUG: Executing python function read_shlibdeps
+DEBUG: Python function read_shlibdeps finished
+DEBUG: Executing python function package_depchains
+DEBUG: Python function package_depchains finished
+DEBUG: Executing python function emit_pkgdata
+DEBUG: Python function emit_pkgdata finished
+DEBUG: Python function do_package finished
+DEBUG: Executing python function sstate_task_postfunc
+NOTE: Using umask 0o002 (not 22) for sstate packaging
+DEBUG: Executing python function target_add_sysroot_deps
+DEBUG: Python function target_add_sysroot_deps finished
+DEBUG: Executing python function sstate_hardcode_path
+NOTE: Removing hardcoded paths from sstate package: 'find /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/sstate-build-package/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" \) -type f | xargs grep -l -e '/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot' -e '/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native' -e '/home/lemageoire/fsl-community-bsp/build-openrex/tmp/hosttools' | tee /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/sstate-build-package/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
+DEBUG: Python function sstate_hardcode_path finished
+DEBUG: Executing python function sstate_report_unihash
+DEBUG: Reported task c1dd6f09428063d8de420a57de9637841204f6053e91423ab2ec968999802a59 as unihash c1dd6f09428063d8de420a57de9637841204f6053e91423ab2ec968999802a59 to unix:///home/lemageoire/fsl-community-bsp/build-openrex/hashserve.sock
+DEBUG: Python function sstate_report_unihash finished
+DEBUG: Executing shell function sstate_create_package
+DEBUG: Shell function sstate_create_package finished
+DEBUG: Executing python function sstate_hardcode_path_unpack
+DEBUG: Python function sstate_hardcode_path_unpack finished
+DEBUG: Executing python function uninative_changeinterp
+DEBUG: Python function uninative_changeinterp finished
+DEBUG: Python function sstate_task_postfunc finished

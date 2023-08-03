@@ -1,0 +1,15 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libitm-dev: GNU transactional memory support library - development files
+RDEPENDS:libitm-dev: libitm
+RRECOMMENDS:libitm-dev: libgcc-dev glibc-dev
+SECTION: devel
+PKG:libitm-dev: libitm-dev
+FILES:libitm-dev:     /usr/lib/libitm.so     /usr/lib/libitm.la     /usr/lib/libitm.spec 
+FILES_INFO:libitm-dev: {"/usr/lib/libitm.so": 15, "/usr/lib/libitm.spec": 162}
+PKGSIZE:libitm-dev: 177

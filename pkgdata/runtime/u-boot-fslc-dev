@@ -1,0 +1,16 @@
+PN: u-boot-fslc
+PV: 2022.10+gitAUTOINC+cbd7eb17ac
+PR: r0
+PKGV: 2022.10+git@PRSERV_PV_AUTOINC@+cbd7eb17ac
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: GPL-2.0-or-later
+DESCRIPTION:u-boot-fslc-dev: U-Boot based on mainline U-Boot used by FSL Community BSP in order to provide support for some backported features and fixes, or because it was submitted for revision and it takes some time to become part of a stable version, or because it is not applicable for upstreaming.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY:u-boot-fslc-dev: Universal Boot Loader for embedded devices - Development files
+RDEPENDS:u-boot-fslc-dev: u-boot-fslc (= 2022.10+git@PRSERV_PV_AUTOINC@+cbd7eb17ac-r0@EXTENDPRAUTO@)
+RRECOMMENDS:u-boot-fslc-dev: u-boot-fslc-env-dev
+SECTION:u-boot-fslc-dev: devel
+PKG:u-boot-fslc-dev: u-boot-fslc-dev
+ALLOW_EMPTY:u-boot-fslc-dev: 1
+FILES:u-boot-fslc-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la                 /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig                 /usr/share/aclocal /lib/*.o                 /usr/lib/u-boot-fslc/*.la /lib/*.la                 /usr/lib/cmake /usr/share/cmake
+FILES_INFO:u-boot-fslc-dev: {}
+PKGSIZE:u-boot-fslc-dev: 0

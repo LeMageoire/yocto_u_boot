@@ -1,0 +1,14 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libquadmath-dev: GNU quad-precision math library - development files
+RRECOMMENDS:libquadmath-dev: libgcc-dev
+SECTION: devel
+PKG:libquadmath-dev: libquadmath-dev
+FILES:libquadmath-dev:     /usr/lib/arm-poky-linux-gnueabi/11.3.0/include/quadmath*     /usr/lib/libquadmath*.so     /usr/lib/libquadmath.la 
+FILES_INFO:libquadmath-dev: {}
+PKGSIZE:libquadmath-dev: 0

@@ -1,0 +1,13 @@
+PN: linux-libc-headers
+PV: 5.16
+PR: r0
+PKGV: 5.16
+PKGR: r0
+LICENSE: GPL-2.0-only
+DESCRIPTION: Designed to maintain an Application Programming Interface (API) stable version of the Linux headers
+SUMMARY: Sanitized set of kernel headers for the C library's use
+SECTION: devel
+PKG:linux-libc-headers: linux-libc-headers
+FILES:linux-libc-headers: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.*             /etc /com /var             /bin/* /sbin/*             /lib/*.so.*             /lib/udev /usr/lib/udev             /lib/udev /usr/lib/udev             /usr/share/linux-libc-headers /usr/lib/linux-libc-headers/*             /usr/share/pixmaps /usr/share/applications             /usr/share/idl /usr/share/omf /usr/share/sounds             /usr/lib/bonobo/servers
+FILES_INFO:linux-libc-headers: {}
+PKGSIZE:linux-libc-headers: 0

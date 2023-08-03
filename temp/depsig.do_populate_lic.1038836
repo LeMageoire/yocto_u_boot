@@ -1,0 +1,10 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:u-boot-fslc::2022.10+gitAUTOINC+cbd7eb17ac:r0::10:
+task=populate_lic
+drwx                                                                                       .
+drwx                                                                                       ./license-destdir
+drwx                                                                                       ./license-destdir/u-boot-fslc
+-rw-                 7288 79feed9f3865276aa9acb7fdc5ea2aba63d2f2502eda0327c10af03c8f639db2 ./license-destdir/u-boot-fslc/README
+-rw-                17622 606aa26338f69ce178f1cbc648b7574aec4b5bbaeb20f4df36ff49010cb8fbbd ./license-destdir/u-boot-fslc/generic_GPL-2.0-or-later
+-rw-                   67 3f9a93b51cf06ec6995f35d36c5945fc4dc97eaf3beb04c0e951f01468b1bf77 ./license-destdir/u-boot-fslc/recipeinfo

@@ -1,0 +1,26 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION:glibc-utils: Miscellaneous utilities including getconf, iconv, locale, gencat, ...
+SUMMARY:glibc-utils: Miscellaneous utilities provided by glibc
+RDEPENDS:glibc-utils: glibc (>= 2.35)
+RPROVIDES:glibc-utils: eglibc-utils glibc-utils (=2.35)
+SECTION: libs
+PKG:glibc-utils: libc6-utils
+FILES:glibc-utils: /usr/bin/* /usr/sbin/*
+FILES_INFO:glibc-utils: {"/usr/bin/gencat": 17924, "/usr/bin/getconf": 21984, "/usr/bin/getent": 18064, "/usr/bin/iconv": 38412, "/usr/bin/locale": 31636, "/usr/bin/makedb": 13828, "/usr/bin/pcprofiledump": 9736, "/usr/bin/pldd": 9680, "/usr/bin/sprof": 22016, "/usr/sbin/iconvconfig": 22028}
+FILERDEPENDSFLIST:glibc-utils: /usr/bin/gencat /usr/bin/getconf /usr/bin/getent /usr/bin/iconv /usr/bin/locale /usr/bin/makedb /usr/bin/pcprofiledump /usr/bin/pldd /usr/bin/sprof /usr/sbin/iconvconfig
+FILERDEPENDS:/usr/bin/gencat:glibc-utils:  libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/getconf:glibc-utils:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/getent:glibc-utils:  libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/iconv:glibc-utils:  libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/locale:glibc-utils:  libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/makedb:glibc-utils:  libc.so.6(GLIBC_2.30) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/pcprofiledump:glibc-utils:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/pldd:glibc-utils:  libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/bin/sprof:glibc-utils:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/usr/sbin/iconvconfig:glibc-utils:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libc.so.6
+PKGSIZE:glibc-utils: 205308

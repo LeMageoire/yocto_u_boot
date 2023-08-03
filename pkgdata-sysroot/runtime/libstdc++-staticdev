@@ -1,0 +1,13 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libstdc++-staticdev: GNU standard C++ library - static development files
+SECTION: devel
+PKG:libstdc++-staticdev: libstdc++-staticdev
+FILES:libstdc++-staticdev:     /usr/lib/libstdc++*.a     /usr/lib/libsupc++.a 
+FILES_INFO:libstdc++-staticdev: {"/usr/lib/libstdc++.a": 28604458, "/usr/lib/libstdc++fs.a": 5997062, "/usr/lib/libsupc++.a": 1013194}
+PKGSIZE:libstdc++-staticdev: 35614714

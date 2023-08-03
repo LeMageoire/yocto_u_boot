@@ -1,0 +1,14 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libstdc++-precompile-dev: GNU standard C++ library - precompiled header files
+RRECOMMENDS:libstdc++-precompile-dev: libgcc-dev
+SECTION: devel
+PKG:libstdc++-precompile-dev: libstdc++-precompile-dev
+FILES:libstdc++-precompile-dev: /usr/include/c++/arm-poky-linux-gnueabi/bits/*.gch
+FILES_INFO:libstdc++-precompile-dev: {}
+PKGSIZE:libstdc++-precompile-dev: 0

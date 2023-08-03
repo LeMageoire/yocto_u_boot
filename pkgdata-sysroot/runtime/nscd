@@ -1,0 +1,19 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION:nscd: nscd, name service cache daemon, caches name service lookups for the passwd, group and hosts information.  It can damatically improvide performance with remote, such as NIS or NIS+, name services.
+SUMMARY:nscd: Name service cache daemon
+RDEPENDS:nscd: glibc (>= 2.35)
+SECTION: libs
+PKG:nscd: nscd
+FILES:nscd: /usr/sbin/nscd* /etc/init.d/nscd /lib/systemd/system/nscd* /etc/tmpfiles.d/nscd.conf               /etc/nscd.conf /etc/default/volatiles/98_nscd /var/db/nscd
+CONFFILES:nscd: /etc/nscd.conf
+FILES_INFO:nscd: {"/etc/default/volatiles/98_nscd": 36, "/etc/init.d/nscd": 2512, "/etc/nscd.conf": 2716, "/usr/sbin/nscd": 101280}
+pkg_postinst:nscd: set -e\n\tif [ -z "$D" ]; then\n\t\tif command -v systemd-tmpfiles >/dev/null; then\n\t\t\tsystemd-tmpfiles --create /etc/tmpfiles.d/nscd.conf\n\t\telif [ -e /etc/init.d/populate-volatile.sh ]; then\n\t\t\t/etc/init.d/populate-volatile.sh update\n\t\tfi\n\tfi\n
+FILERDEPENDSFLIST:nscd: /etc/init.d/nscd /usr/sbin/nscd
+FILERDEPENDS:/etc/init.d/nscd:nscd:  /bin/sh
+FILERDEPENDS:/usr/sbin/nscd:nscd:  libc.so.6(GLIBC_2.9) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+PKGSIZE:nscd: 106544

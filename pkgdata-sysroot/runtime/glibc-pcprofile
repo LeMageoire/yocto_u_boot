@@ -1,0 +1,20 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION: The GNU C Library is used as the system C library in most systems with the Linux kernel.
+SUMMARY: GLIBC (GNU C Library)
+RDEPENDS:glibc-pcprofile: glibc (>= 2.35)
+RPROVIDES:glibc-pcprofile: eglibc-pcprofile glibc-pcprofile (=2.35)
+SECTION: libs
+PKG:glibc-pcprofile: libc6-pcprofile
+FILES:glibc-pcprofile: /lib/libpcprofile.so
+FILES_INFO:glibc-pcprofile: {"/lib/libpcprofile.so": 5452}
+pkg_postinst:glibc-pcprofile: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:glibc-pcprofile: /lib/libpcprofile.so
+FILERPROVIDES:/lib/libpcprofile.so:glibc-pcprofile:  libpcprofile.so
+FILERDEPENDSFLIST:glibc-pcprofile: /lib/libpcprofile.so
+FILERDEPENDS:/lib/libpcprofile.so:glibc-pcprofile:  libc.so.6(GLIBC_2.4) libc.so.6
+PKGSIZE:glibc-pcprofile: 5452

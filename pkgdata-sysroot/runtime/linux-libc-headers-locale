@@ -1,0 +1,13 @@
+PN: linux-libc-headers
+PV: 5.16
+PR: r0
+PKGV: 5.16
+PKGR: r0
+LICENSE: GPL-2.0-only
+DESCRIPTION: Designed to maintain an Application Programming Interface (API) stable version of the Linux headers
+SUMMARY: Sanitized set of kernel headers for the C library's use
+SECTION: devel
+PKG:linux-libc-headers-locale: linux-libc-headers-locale
+FILES:linux-libc-headers-locale: /usr/share/locale
+FILES_INFO:linux-libc-headers-locale: {}
+PKGSIZE:linux-libc-headers-locale: 0

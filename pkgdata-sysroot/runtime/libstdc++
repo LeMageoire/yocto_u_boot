@@ -1,0 +1,20 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libstdc++: GNU standard C++ library
+RDEPENDS:libstdc++: glibc (>= 2.35) libgcc (>= 11.3.0)
+RPROVIDES:libstdc++:  libstdc++ (=11.3.0)
+SECTION: devel
+PKG:libstdc++: libstdc++6
+FILES:libstdc++: /usr/lib/libstdc++.so.*
+FILES_INFO:libstdc++: {"/usr/lib/libstdc++.so.6": 19, "/usr/lib/libstdc++.so.6.0.29": 1386176}
+pkg_postinst:libstdc++: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:libstdc++: /usr/lib/libstdc++.so.6.0.29
+FILERPROVIDES:/usr/lib/libstdc++.so.6.0.29:libstdc++:  libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4.1) libstdc++.so.6(GLIBCXX_3.4.1) libstdc++.so.6(GLIBCXX_3.4.2) libstdc++.so.6(GLIBCXX_3.4.2) libstdc++.so.6(GLIBCXX_3.4.3) libstdc++.so.6(GLIBCXX_3.4.3) libstdc++.so.6(GLIBCXX_3.4.4) libstdc++.so.6(GLIBCXX_3.4.4) libstdc++.so.6(GLIBCXX_3.4.5) libstdc++.so.6(GLIBCXX_3.4.5) libstdc++.so.6(GLIBCXX_3.4.6) libstdc++.so.6(GLIBCXX_3.4.6) libstdc++.so.6(GLIBCXX_3.4.7) libstdc++.so.6(GLIBCXX_3.4.7) libstdc++.so.6(GLIBCXX_3.4.8) libstdc++.so.6(GLIBCXX_3.4.8) libstdc++.so.6(GLIBCXX_3.4.9) libstdc++.so.6(GLIBCXX_3.4.9) libstdc++.so.6(GLIBCXX_3.4.10) libstdc++.so.6(GLIBCXX_3.4.10) libstdc++.so.6(GLIBCXX_3.4.11) libstdc++.so.6(GLIBCXX_3.4.11) libstdc++.so.6(GLIBCXX_3.4.12) libstdc++.so.6(GLIBCXX_3.4.12) libstdc++.so.6(GLIBCXX_3.4.13) libstdc++.so.6(GLIBCXX_3.4.13) libstdc++.so.6(GLIBCXX_3.4.14) libstdc++.so.6(GLIBCXX_3.4.14) libstdc++.so.6(GLIBCXX_3.4.15) libstdc++.so.6(GLIBCXX_3.4.15) libstdc++.so.6(GLIBCXX_3.4.16) libstdc++.so.6(GLIBCXX_3.4.16) libstdc++.so.6(GLIBCXX_3.4.17) libstdc++.so.6(GLIBCXX_3.4.17) libstdc++.so.6(GLIBCXX_3.4.18) libstdc++.so.6(GLIBCXX_3.4.18) libstdc++.so.6(GLIBCXX_3.4.19) libstdc++.so.6(GLIBCXX_3.4.19) libstdc++.so.6(GLIBCXX_3.4.20) libstdc++.so.6(GLIBCXX_3.4.20) libstdc++.so.6(GLIBCXX_3.4.21) libstdc++.so.6(GLIBCXX_3.4.21) libstdc++.so.6(GLIBCXX_3.4.22) libstdc++.so.6(GLIBCXX_3.4.22) libstdc++.so.6(GLIBCXX_3.4.23) libstdc++.so.6(GLIBCXX_3.4.23) libstdc++.so.6(GLIBCXX_3.4.24) libstdc++.so.6(GLIBCXX_3.4.24) libstdc++.so.6(GLIBCXX_3.4.25) libstdc++.so.6(GLIBCXX_3.4.25) libstdc++.so.6(GLIBCXX_3.4.26) libstdc++.so.6(GLIBCXX_3.4.26) libstdc++.so.6(GLIBCXX_3.4.27) libstdc++.so.6(GLIBCXX_3.4.27) libstdc++.so.6(GLIBCXX_3.4.28) libstdc++.so.6(GLIBCXX_3.4.28) libstdc++.so.6(GLIBCXX_3.4.29) libstdc++.so.6(GLIBCXX_3.4.29) libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.1) libstdc++.so.6(CXXABI_1.3.1) libstdc++.so.6(CXXABI_1.3.2) libstdc++.so.6(CXXABI_1.3.2) libstdc++.so.6(CXXABI_1.3.3) libstdc++.so.6(CXXABI_1.3.3) libstdc++.so.6(CXXABI_1.3.4) libstdc++.so.6(CXXABI_1.3.4) libstdc++.so.6(CXXABI_1.3.5) libstdc++.so.6(CXXABI_1.3.5) libstdc++.so.6(CXXABI_1.3.6) libstdc++.so.6(CXXABI_1.3.6) libstdc++.so.6(CXXABI_1.3.7) libstdc++.so.6(CXXABI_1.3.7) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_1.3.10) libstdc++.so.6(CXXABI_1.3.10) libstdc++.so.6(CXXABI_1.3.11) libstdc++.so.6(CXXABI_1.3.11) libstdc++.so.6(CXXABI_1.3.12) libstdc++.so.6(CXXABI_1.3.12) libstdc++.so.6(CXXABI_1.3.13) libstdc++.so.6(CXXABI_1.3.13) libstdc++.so.6(CXXABI_TM_1) libstdc++.so.6(CXXABI_ARM_1.3.3) libstdc++.so.6
+FILERDEPENDSFLIST:libstdc++: /usr/lib/libstdc++.so.6.0.29
+FILERDEPENDS:/usr/lib/libstdc++.so.6.0.29:libstdc++:  ld-linux-armhf.so.3(GLIBC_2.4) libgcc_s.so.1(GCC_3.3) libgcc_s.so.1(GCC_3.4) libgcc_s.so.1(GCC_3.5) libgcc_s.so.1(GCC_3.0) libm.so.6(GLIBC_2.35) libm.so.6(GLIBC_2.29) libm.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_2.33) libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.32) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libm.so.6 libc.so.6 ld-linux-armhf.so.3 libgcc_s.so.1 rtld(GNU_HASH)
+PKGSIZE:libstdc++: 1386195

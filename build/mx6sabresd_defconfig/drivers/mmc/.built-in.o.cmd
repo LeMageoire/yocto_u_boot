@@ -1,0 +1,1 @@
+cmd_drivers/mmc/built-in.o :=  rm -f drivers/mmc/built-in.o; arm-poky-linux-gnueabi-ar cDPrsT drivers/mmc/built-in.o drivers/mmc/mmc.o drivers/mmc/mmc-uclass.o drivers/mmc/mmc_bootdev.o drivers/mmc/mmc_write.o drivers/mmc/mmc_boot.o drivers/mmc/fsl_esdhc_imx.o

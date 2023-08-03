@@ -1,0 +1,12 @@
+DEBUG: Executing python function extend_recipe_sysroot
+NOTE: Direct dependencies are ['/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/quilt/quilt-native_0.67.bb:do_populate_sysroot', 'virtual:native:/home/lemageoire/fsl-community-bsp/sources/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot']
+NOTE: Installed into sysroot: ['quilt-native', 'patch-native', 'attr-native', 'libtool-native', 'gettext-minimal-native', 'texinfo-dummy-native']
+NOTE: Skipping as already exists in sysroot: []
+DEBUG: sed -e 's:^[^/]*/:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native/:g' /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/quilt-native/fixmepath /home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/libtool-native/fixmepath | xargs sed -i -e 's:FIXMESTAGINGDIRTARGET:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot:g; s:FIXMESTAGINGDIRHOST:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/recipe-sysroot-native:g' -e 's:FIXME_PSEUDO_SYSROOT:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/sysroots-components/x86_64/pseudo-native:g' -e 's:FIXME_HOSTTOOLS_DIR:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/hosttools:g' -e 's:FIXME_PKGDATA_DIR:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/pkgdata/imx6qdlsabresd:g' -e 's:FIXME_PSEUDO_LOCALSTATEDIR:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/pseudo/:g' -e 's:FIXME_LOGFIFO:/home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/temp/fifo.931785:g'
+DEBUG: Python function extend_recipe_sysroot finished
+DEBUG: Executing python function do_patch
+DEBUG: Executing python function patch_do_patch
+DEBUG: Python function patch_do_patch finished
+DEBUG: Python function do_patch finished
+DEBUG: Executing python function do_qa_patch
+DEBUG: Python function do_qa_patch finished

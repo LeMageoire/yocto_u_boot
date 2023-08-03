@@ -1,0 +1,14 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libg2c-dev: Companion runtime library for g77 - development files
+RRECOMMENDS:libg2c-dev: libgcc-dev
+SECTION: devel
+PKG:libg2c-dev: libg2c-dev
+FILES:libg2c-dev:     /usr/lib/libg2c.so     /usr/lib/libg2c.a     /usr/lib/libfrtbegin.a 
+FILES_INFO:libg2c-dev: {}
+PKGSIZE:libg2c-dev: 0

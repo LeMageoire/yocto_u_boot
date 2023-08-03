@@ -1,0 +1,14 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libssp-dev: GNU stack smashing protection library - development files
+RRECOMMENDS:libssp-dev: libgcc-dev
+SECTION: devel
+PKG:libssp-dev: libssp-dev
+FILES:libssp-dev:     /usr/lib/libssp*.so     /usr/lib/libssp*_nonshared.a     /usr/lib/libssp*.la     /usr/lib/arm-poky-linux-gnueabi/11.3.0/include/ssp 
+FILES_INFO:libssp-dev: {}
+PKGSIZE:libssp-dev: 0

@@ -1,0 +1,15 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libgomp-dev: GNU OpenMP parallel programming library - development files
+RDEPENDS:libgomp-dev: libgomp
+RRECOMMENDS:libgomp-dev: libgcc-dev glibc-dev
+SECTION: devel
+PKG:libgomp-dev: libgomp-dev
+FILES:libgomp-dev:     /usr/lib/libgomp*.so     /usr/lib/libgomp*.la     /usr/lib/libgomp.spec     /usr/lib/arm-poky-linux-gnueabi/11.3.0/include/acc_prof.h     /usr/lib/arm-poky-linux-gnueabi/11.3.0/include/omp.h     /usr/lib/arm-poky-linux-gnueabi/11.3.0/include/openacc.h 
+FILES_INFO:libgomp-dev: {"/usr/lib/arm-poky-linux-gnueabi/11.3.0/include/acc_prof.h": 7454, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/include/omp.h": 10176, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/include/openacc.h": 6403, "/usr/lib/libgomp.so": 16, "/usr/lib/libgomp.spec": 169}
+PKGSIZE:libgomp-dev: 24218

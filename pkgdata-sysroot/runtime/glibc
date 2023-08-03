@@ -1,0 +1,45 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION: The GNU C Library is used as the system C library in most systems with the Linux kernel.
+SUMMARY: GLIBC (GNU C Library)
+RPROVIDES:glibc: eglibc rtld(GNU_HASH) glibc (=2.35)
+RRECOMMENDS:glibc: ldconfig
+SECTION: libs
+PKG:glibc: libc6
+FILES:glibc: /lib/libc.so.* /lib/libc-*.so /lib/libm*.so.* /lib/libm-*.so /lib/libmvec-*.so /lib/ld*.so.* /lib/ld-*.so /lib/libpthread*.so.* /lib/libpthread-*.so /lib/libresolv*.so.* /lib/libresolv-*.so /lib/librt*.so.* /lib/librt-*.so /lib/libutil*.so.* /lib/libutil-*.so /lib/libnsl*.so.* /lib/libnsl-*.so /lib/libnss_files*.so.* /lib/libnss_files-*.so /lib/libnss_compat*.so.* /lib/libnss_compat-*.so /lib/libnss_dns*.so.* /lib/libnss_dns-*.so /lib/libdl*.so.* /lib/libdl-*.so /lib/libanl*.so.* /lib/libanl-*.so /lib/libBrokenLocale*.so.* /lib/libBrokenLocale-*.so  /usr/libexec/* /etc/ld.so.conf
+FILES_INFO:glibc: {"/etc/ld.so.conf": 33, "/lib/ld-linux-armhf.so.3": 134644, "/lib/libBrokenLocale.so.1": 5516, "/lib/libanl.so.1": 9704, "/lib/libc.so.6": 1058812, "/lib/libdl.so.2": 5504, "/lib/libm.so.6": 259460, "/lib/libnsl.so.1": 54656, "/lib/libnss_compat.so.2": 22120, "/lib/libnss_dns.so.2": 5508, "/lib/libnss_files.so.2": 5512, "/lib/libpthread.so.0": 5508, "/lib/libresolv.so.2": 38396, "/lib/librt.so.1": 5608, "/lib/libutil.so.1": 5508}
+pkg_postinst:glibc: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:glibc: /lib/ld-linux-armhf.so.3 /lib/libBrokenLocale.so.1 /lib/libanl.so.1 /lib/libc.so.6 /lib/libdl.so.2 /lib/libm.so.6 /lib/libnsl.so.1 /lib/libnss@underscore@compat.so.2 /lib/libnss@underscore@dns.so.2 /lib/libnss@underscore@files.so.2 /lib/libpthread.so.0 /lib/libresolv.so.2 /lib/librt.so.1 /lib/libutil.so.1
+FILERPROVIDES:/lib/ld-linux-armhf.so.3:glibc:  ld-linux-armhf.so.3(GLIBC_2.4) ld-linux-armhf.so.3(GLIBC_2.34) ld-linux-armhf.so.3(GLIBC_2.34) ld-linux-armhf.so.3(GLIBC_2.35) ld-linux-armhf.so.3(GLIBC_2.35) ld-linux-armhf.so.3(GLIBC_PRIVATE) ld-linux-armhf.so.3(GLIBC_PRIVATE) ld-linux-armhf.so.3
+FILERPROVIDES:/lib/libBrokenLocale.so.1:glibc:  libBrokenLocale.so.1(GLIBC_2.4) libBrokenLocale.so.1
+FILERPROVIDES:/lib/libanl.so.1:glibc:  libanl.so.1(GLIBC_2.4) libanl.so.1
+FILERPROVIDES:/lib/libc.so.6:glibc:  libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.5) libc.so.6(GLIBC_2.5) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.6) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.8) libc.so.6(GLIBC_2.9) libc.so.6(GLIBC_2.9) libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_2.10) libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.11) libc.so.6(GLIBC_2.12) libc.so.6(GLIBC_2.12) libc.so.6(GLIBC_2.13) libc.so.6(GLIBC_2.13) libc.so.6(GLIBC_2.14) libc.so.6(GLIBC_2.14) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.15) libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_2.22) libc.so.6(GLIBC_2.22) libc.so.6(GLIBC_2.23) libc.so.6(GLIBC_2.23) libc.so.6(GLIBC_2.24) libc.so.6(GLIBC_2.24) libc.so.6(GLIBC_2.25) libc.so.6(GLIBC_2.25) libc.so.6(GLIBC_2.26) libc.so.6(GLIBC_2.26) libc.so.6(GLIBC_2.27) libc.so.6(GLIBC_2.27) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.29) libc.so.6(GLIBC_2.29) libc.so.6(GLIBC_2.30) libc.so.6(GLIBC_2.30) libc.so.6(GLIBC_2.31) libc.so.6(GLIBC_2.31) libc.so.6(GLIBC_2.32) libc.so.6(GLIBC_2.32) libc.so.6(GLIBC_2.33) libc.so.6(GLIBC_2.33) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.35) libc.so.6(GLIBC_2.35) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_PRIVATE) libc.so.6
+FILERPROVIDES:/lib/libdl.so.2:glibc:  libdl.so.2(GLIBC_2.4) libdl.so.2
+FILERPROVIDES:/lib/libm.so.6:glibc:  libm.so.6(GLIBC_2.4) libm.so.6(GLIBC_2.15) libm.so.6(GLIBC_2.15) libm.so.6(GLIBC_2.18) libm.so.6(GLIBC_2.18) libm.so.6(GLIBC_2.23) libm.so.6(GLIBC_2.23) libm.so.6(GLIBC_2.24) libm.so.6(GLIBC_2.24) libm.so.6(GLIBC_2.25) libm.so.6(GLIBC_2.25) libm.so.6(GLIBC_2.27) libm.so.6(GLIBC_2.27) libm.so.6(GLIBC_2.28) libm.so.6(GLIBC_2.28) libm.so.6(GLIBC_2.29) libm.so.6(GLIBC_2.29) libm.so.6(GLIBC_2.31) libm.so.6(GLIBC_2.31) libm.so.6(GLIBC_2.32) libm.so.6(GLIBC_2.32) libm.so.6(GLIBC_2.35) libm.so.6(GLIBC_2.35) libm.so.6
+FILERPROVIDES:/lib/libnsl.so.1:glibc:  libnsl.so.1(GLIBC_2.4) libnsl.so.1(GLIBC_PRIVATE) libnsl.so.1(GLIBC_PRIVATE) libnsl.so.1
+FILERPROVIDES:/lib/libnss@underscore@compat.so.2:glibc:  libnss_compat.so.2(GLIBC_PRIVATE) libnss_compat.so.2
+FILERPROVIDES:/lib/libnss@underscore@dns.so.2:glibc:  libnss_dns.so.2(GLIBC_PRIVATE) libnss_dns.so.2
+FILERPROVIDES:/lib/libnss@underscore@files.so.2:glibc:  libnss_files.so.2(GLIBC_PRIVATE) libnss_files.so.2
+FILERPROVIDES:/lib/libpthread.so.0:glibc:  libpthread.so.0(GLIBC_2.4) libpthread.so.0(GLIBC_2.11) libpthread.so.0(GLIBC_2.11) libpthread.so.0(GLIBC_2.12) libpthread.so.0(GLIBC_2.12) libpthread.so.0(GLIBC_2.18) libpthread.so.0(GLIBC_2.18) libpthread.so.0(GLIBC_2.28) libpthread.so.0(GLIBC_2.28) libpthread.so.0(GLIBC_2.30) libpthread.so.0(GLIBC_2.30) libpthread.so.0(GLIBC_2.31) libpthread.so.0(GLIBC_2.31) libpthread.so.0
+FILERPROVIDES:/lib/libresolv.so.2:glibc:  libresolv.so.2(GLIBC_2.4) libresolv.so.2(GLIBC_2.9) libresolv.so.2(GLIBC_2.9) libresolv.so.2(GLIBC_PRIVATE) libresolv.so.2(GLIBC_PRIVATE) libresolv.so.2
+FILERPROVIDES:/lib/librt.so.1:glibc:  librt.so.1(GLIBC_2.4) librt.so.1(GLIBC_2.7) librt.so.1(GLIBC_2.7) librt.so.1
+FILERPROVIDES:/lib/libutil.so.1:glibc:  libutil.so.1(GLIBC_2.4) libutil.so.1
+FILERDEPENDSFLIST:glibc: /lib/libBrokenLocale.so.1 /lib/libanl.so.1 /lib/libc.so.6 /lib/libdl.so.2 /lib/libm.so.6 /lib/libnsl.so.1 /lib/libnss@underscore@compat.so.2 /lib/libnss@underscore@dns.so.2 /lib/libnss@underscore@files.so.2 /lib/libpthread.so.0 /lib/libresolv.so.2 /lib/librt.so.1 /lib/libutil.so.1
+FILERDEPENDS:/lib/libBrokenLocale.so.1:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libanl.so.1:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libc.so.6:glibc:  ld-linux-armhf.so.3(GLIBC_2.4) ld-linux-armhf.so.3(GLIBC_PRIVATE) ld-linux-armhf.so.3
+FILERDEPENDS:/lib/libdl.so.2:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libm.so.6:glibc:  libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libnsl.so.1:glibc:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libnss@underscore@compat.so.2:glibc:  libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE) libc.so.6
+FILERDEPENDS:/lib/libnss@underscore@dns.so.2:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libnss@underscore@files.so.2:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libpthread.so.0:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/libresolv.so.2:glibc:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6
+FILERDEPENDS:/lib/librt.so.1:glibc:  ld-linux-armhf.so.3(GLIBC_PRIVATE) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libc.so.6 ld-linux-armhf.so.3
+FILERDEPENDS:/lib/libutil.so.1:glibc:  libc.so.6(GLIBC_2.4) libc.so.6
+PKGSIZE:glibc: 1616489

@@ -1,0 +1,15 @@
+PN: linux-libc-headers
+PV: 5.16
+PR: r0
+PKGV: 5.16
+PKGR: r0
+LICENSE: GPL-2.0-only
+DESCRIPTION:linux-libc-headers-dbg: Designed to maintain an Application Programming Interface (API) stable version of the Linux headers  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY:linux-libc-headers-dbg: Sanitized set of kernel headers for the C library's use - Debugging files
+RRECOMMENDS:linux-libc-headers-dbg: linux-libc-headers-dev (= 5.16-r0)
+SECTION:linux-libc-headers-dbg: devel
+PKG:linux-libc-headers-dbg: linux-libc-headers-dbg
+ALLOW_EMPTY:linux-libc-headers-dbg: 1
+FILES:linux-libc-headers-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO:linux-libc-headers-dbg: {}
+PKGSIZE:linux-libc-headers-dbg: 0

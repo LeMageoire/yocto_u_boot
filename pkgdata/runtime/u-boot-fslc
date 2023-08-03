@@ -1,0 +1,14 @@
+PN: u-boot-fslc
+PV: 2022.10+gitAUTOINC+cbd7eb17ac
+PR: r0
+PKGV: 2022.10+git@PRSERV_PV_AUTOINC@+cbd7eb17ac
+PKGR: r0@EXTENDPRAUTO@
+LICENSE: GPL-2.0-or-later
+DESCRIPTION: U-Boot based on mainline U-Boot used by FSL Community BSP in order to provide support for some backported features and fixes, or because it was submitted for revision and it takes some time to become part of a stable version, or because it is not applicable for upstreaming.
+SUMMARY: Universal Boot Loader for embedded devices
+RDEPENDS:u-boot-fslc: u-boot-fslc-env
+SECTION: base
+PKG:u-boot-fslc: u-boot-fslc
+FILES:u-boot-fslc: /boot /usr/share
+FILES_INFO:u-boot-fslc: {"/boot/SPL": 39, "/boot/SPL-sd": 39, "/boot/SPL-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0": 44032, "/boot/u-boot-sd-2022.10+gitAUTOINC+cbd7eb17ac-r0.img": 712720, "/boot/u-boot.img": 46, "/boot/u-boot.img-sd": 46}
+PKGSIZE:u-boot-fslc: 756922

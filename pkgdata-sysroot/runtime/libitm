@@ -1,0 +1,20 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libitm: GNU transactional memory support library
+RDEPENDS:libitm: glibc (>= 2.35) libgcc (>= 11.3.0)
+RPROVIDES:libitm:  libitm (=11.3.0)
+SECTION: devel
+PKG:libitm: libitm1
+FILES:libitm: /usr/lib/libitm.so.*
+FILES_INFO:libitm: {"/usr/lib/libitm.so.1": 15, "/usr/lib/libitm.so.1.0.0": 54864}
+pkg_postinst:libitm: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:libitm: /usr/lib/libitm.so.1.0.0
+FILERPROVIDES:/usr/lib/libitm.so.1.0.0:libitm:  libitm.so.1(LIBITM_1.0) libitm.so.1(LIBITM_1.1) libitm.so.1(LIBITM_1.1) libitm.so.1
+FILERDEPENDSFLIST:libitm: /usr/lib/libitm.so.1.0.0
+FILERDEPENDS:/usr/lib/libitm.so.1.0.0:libitm:  libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libgcc_s.so.1(GCC_3.0) libgcc_s.so.1(GCC_3.5) libgcc_s.so.1 libc.so.6 rtld(GNU_HASH)
+PKGSIZE:libitm: 54879

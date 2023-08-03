@@ -1,0 +1,11 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:u-boot-fslc:imx6qdlsabresd-poky-linux-gnueabi:2022.10+gitAUTOINC+cbd7eb17ac:r0:imx6qdlsabresd:10:
+task=package_write_rpm
+drwx                                                                                       .
+drwx                                                                                       ./deploy-rpms
+drwx                                                                                       ./deploy-rpms/imx6qdlsabresd
+-rw-               335533 e4121472bcde86015f5219ee794cab4364124d027632dba5ca073103b30ecbac ./deploy-rpms/imx6qdlsabresd/u-boot-fslc-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+-rw-                 6109 5d2a02966be983309edb77948f9b48215453e6e37b58000300725c5b2ede5d9a ./deploy-rpms/imx6qdlsabresd/u-boot-fslc-dbg-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+-rw-                 6261 1358f150db97c0351d29b74adedddd7797f59758405dce4eaf874dc0de1d7250 ./deploy-rpms/imx6qdlsabresd/u-boot-fslc-dev-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm
+-rw-                 8333 861c7061bd5dbe3edad52e32f9a674342a85f2c67db676a71a4e3d939f44669c ./deploy-rpms/imx6qdlsabresd/u-boot-fslc-env-2022.10+git0+cbd7eb17ac-r0.imx6qdlsabresd.rpm

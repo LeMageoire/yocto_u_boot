@@ -1,0 +1,17 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION:glibc-dbg: The GNU C Library is used as the system C library in most systems with the Linux kernel.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY:glibc-dbg: GLIBC (GNU C Library) - Debugging files
+RPROVIDES:glibc-dbg: eglibc-dbg libc-dbg glibc-dbg (=2.35)
+RREPLACES:glibc-dbg:  libc-dbg
+RCONFLICTS:glibc-dbg:  libc-dbg
+SECTION:glibc-dbg: devel
+PKG:glibc-dbg: libc6-dbg
+ALLOW_EMPTY:glibc-dbg: 1
+FILES:glibc-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO:glibc-dbg: {"/lib/.debug/ld-linux-armhf.so.3": 1049596, "/lib/.debug/libBrokenLocale.so.1": 19820, "/lib/.debug/libanl.so.1": 40704, "/lib/.debug/libc.so.6": 10607368, "/lib/.debug/libc_malloc_debug.so.0": 150600, "/lib/.debug/libdl.so.2": 9432, "/lib/.debug/libm.so.6": 1059876, "/lib/.debug/libmemusage.so": 56420, "/lib/.debug/libnsl.so.1": 429036, "/lib/.debug/libnss_compat.so.2": 131020, "/lib/.debug/libnss_db.so.2": 152896, "/lib/.debug/libnss_dns.so.2": 7368, "/lib/.debug/libnss_files.so.2": 7368, "/lib/.debug/libnss_hesiod.so.2": 55472, "/lib/.debug/libpcprofile.so": 10520, "/lib/.debug/libpthread.so.0": 8680, "/lib/.debug/libresolv.so.2": 186848, "/lib/.debug/librt.so.1": 17048, "/lib/.debug/libthread_db.so.1": 248812, "/lib/.debug/libutil.so.1": 8188, "/sbin/.debug/ldconfig": 4018188, "/sbin/.debug/sln": 2529444, "/usr/bin/.debug/gencat": 61372, "/usr/bin/.debug/getconf": 27092, "/usr/bin/.debug/getent": 56248, "/usr/bin/.debug/iconv": 174620, "/usr/bin/.debug/locale": 100540, "/usr/bin/.debug/makedb": 45368, "/usr/bin/.debug/pcprofiledump": 20212, "/usr/bin/.debug/pldd": 38640, "/usr/bin/.debug/sprof": 57884, "/usr/bin/.debug/zdump": 40308, "/usr/lib/audit/.debug/sotruss-lib.so": 27652, "/usr/sbin/.debug/iconvconfig": 67592, "/usr/sbin/.debug/nscd": 605444, "/usr/sbin/.debug/zic": 120772}
+PKGSIZE:glibc-dbg: 22248448

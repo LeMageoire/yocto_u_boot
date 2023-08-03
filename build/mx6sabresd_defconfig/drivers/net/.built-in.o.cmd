@@ -1,0 +1,1 @@
+cmd_drivers/net/built-in.o :=  rm -f drivers/net/built-in.o; arm-poky-linux-gnueabi-ar cDPrsT drivers/net/built-in.o drivers/net/fec_mxc.o drivers/net/mscc_eswitch/built-in.o drivers/net/phy/built-in.o drivers/net/qe/built-in.o drivers/net/ti/built-in.o

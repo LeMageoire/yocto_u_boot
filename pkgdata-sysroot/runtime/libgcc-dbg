@@ -1,0 +1,16 @@
+PN: libgcc
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE:libgcc-dbg: GPL-3.0-with-GCC-exception
+DESCRIPTION:libgcc-dbg: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY:libgcc-dbg: GNU cc and gcc C compilers - Debugging files
+RPROVIDES:libgcc-dbg:  libgcc-dbg (=11.3.0)
+RRECOMMENDS:libgcc-dbg: glibc-dbg
+SECTION:libgcc-dbg: devel
+PKG:libgcc-dbg: libgcc-s-dbg
+ALLOW_EMPTY:libgcc-dbg: 1
+FILES:libgcc-dbg: /usr/lib/debug /usr/lib/debug-static /usr/src/debug
+FILES_INFO:libgcc-dbg: {"/lib/.debug/libgcc_s.so.1": 2980244}
+PKGSIZE:libgcc-dbg: 2980244

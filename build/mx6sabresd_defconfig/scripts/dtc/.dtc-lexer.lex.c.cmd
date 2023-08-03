@@ -1,0 +1,1 @@
+cmd_scripts/dtc/dtc-lexer.lex.c := flex -oscripts/dtc/dtc-lexer.lex.c -L /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/scripts/dtc/dtc-lexer.l

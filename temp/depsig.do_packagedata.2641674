@@ -1,0 +1,40 @@
+OEOuthashBasic
+14
+SSTATE_PKGSPEC=sstate:u-boot-fslc:imx6qdlsabresd-poky-linux-gnueabi:2022.10+gitAUTOINC+cbd7eb17ac:r0:imx6qdlsabresd:10:
+task=packagedata
+drwx                                                                                       .
+drwx                                                                                       ./pkgdata-pdata-input
+-rw-                  164 eb933890027ab5fc432fd1abd0aaf727ddcb9575ee3f37627372e8a66fb7864b ./pkgdata-pdata-input/u-boot-fslc
+drwx                                                                                       ./pkgdata-pdata-input/extended
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-dbg.json.zstd
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-dev.json.zstd
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-doc.json.zstd
+-rw-                  148 6e7f54066127cd12ae224c79738e9b423bc5d4710dc052b6fcb76bb62497df39 ./pkgdata-pdata-input/extended/u-boot-fslc-env.json.zstd
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-extlinux.json.zstd
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-locale.json.zstd
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-src.json.zstd
+-rw-                   42 56063a220acdf73c49a0473242c17a3d20357328850ab9a1bc5dee12d31b8aba ./pkgdata-pdata-input/extended/u-boot-fslc-staticdev.json.zstd
+-rw-                  155 f33c0def6dc1943a317df718e4cc488e975a11d3da81798f06907e206d2290a2 ./pkgdata-pdata-input/extended/u-boot-fslc.json.zstd
+drwx                                                                                       ./pkgdata-pdata-input/runtime
+-rw-                  840 4a3fd40dc246d086936eeb1415c1dcedd33c3ede68e3be8070a688852f9d40d5 ./pkgdata-pdata-input/runtime/u-boot-fslc
+-rw-                  823 2742d64e83fd2c9a9c7a088a9fbb05b60998aa7210c15976e88ae1a53ad1f1e0 ./pkgdata-pdata-input/runtime/u-boot-fslc-dbg
+-rw-                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/u-boot-fslc-dbg.packaged
+-rw-                 1189 00a3a00509b86813a9273e2ffcaf363ef34aab4dbf663dd1d7f0d218338b084f ./pkgdata-pdata-input/runtime/u-boot-fslc-dev
+-rw-                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/u-boot-fslc-dev.packaged
+-rw-                  800 5d481ec6e7278c4e32a1707863359509fdbb66aa469ebe36ea64b594cb21301e ./pkgdata-pdata-input/runtime/u-boot-fslc-doc
+-rw-                  950 536a49e84c92f8d5e6031f78c0f9fc5b330561c1892d3eb44bdda99d69df6e8c ./pkgdata-pdata-input/runtime/u-boot-fslc-env
+-rw-                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/u-boot-fslc-env.packaged
+-rw-                  648 487065f68b45652c5dbfbf05243e128567229301c3bc1d0a458c3be5f03a04d2 ./pkgdata-pdata-input/runtime/u-boot-fslc-extlinux
+-rw-                  627 ef9225ce5d1e8930ccdb59ac225d736c7814bd0e6cc3ba1240f8171d34847cb1 ./pkgdata-pdata-input/runtime/u-boot-fslc-locale
+-rw-                  728 63d45ee7e3bf828546902d237e141b7ffa6b63eaa677a330ac4f594684139c4e ./pkgdata-pdata-input/runtime/u-boot-fslc-src
+-rw-                  922 5d0f4d07ad66798c240aa9c9a862474a966e95339e8d974c6126c3e7b7a30a9b ./pkgdata-pdata-input/runtime/u-boot-fslc-staticdev
+-rw-                    0 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ./pkgdata-pdata-input/runtime/u-boot-fslc.packaged
+drwx                                                                                       ./pkgdata-pdata-input/runtime-reverse
+lrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/u-boot-fslc -> ../runtime/u-boot-fslc
+lrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/u-boot-fslc-dbg -> ../runtime/u-boot-fslc-dbg
+lrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/u-boot-fslc-dev -> ../runtime/u-boot-fslc-dev
+lrwx                                                                                       ./pkgdata-pdata-input/runtime-reverse/u-boot-fslc-env -> ../runtime/u-boot-fslc-env
+drwx                                                                                       ./pkgdata-pdata-input/runtime-rprovides
+drwx                                                                                       ./pkgdata-pdata-input/runtime-rprovides/u-boot-default-env
+lrwx                                                                                       ./pkgdata-pdata-input/runtime-rprovides/u-boot-default-env/u-boot-fslc-env -> ../../runtime/u-boot-fslc-env
+drwx                                                                                       ./pkgdata-pdata-input/shlibs2

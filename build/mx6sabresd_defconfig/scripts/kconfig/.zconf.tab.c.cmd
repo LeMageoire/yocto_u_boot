@@ -1,0 +1,1 @@
+cmd_scripts/kconfig/zconf.tab.c := bison -oscripts/kconfig/zconf.tab.c -t -l /home/lemageoire/fsl-community-bsp/build-openrex/tmp/work/imx6qdlsabresd-poky-linux-gnueabi/u-boot-fslc/2022.10+gitAUTOINC+cbd7eb17ac-r0/git/scripts/kconfig/zconf.y

@@ -1,0 +1,1 @@
+cmd_spl/board/freescale/mx6sabresd/built-in.o :=  rm -f spl/board/freescale/mx6sabresd/built-in.o; arm-poky-linux-gnueabi-ar cDPrsT spl/board/freescale/mx6sabresd/built-in.o spl/board/freescale/mx6sabresd/mx6sabresd.o

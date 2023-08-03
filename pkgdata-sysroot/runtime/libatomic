@@ -1,0 +1,20 @@
+PN: gcc-runtime
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.
+SUMMARY:libatomic: GNU C++11 atomics support library
+RDEPENDS:libatomic: glibc (>= 2.35)
+RPROVIDES:libatomic:  libatomic (=11.3.0)
+SECTION: devel
+PKG:libatomic: libatomic1
+FILES:libatomic: /usr/lib/libatomic.so.*
+FILES_INFO:libatomic: {"/usr/lib/libatomic.so.1": 18, "/usr/lib/libatomic.so.1.2.0": 13608}
+pkg_postinst:libatomic: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:libatomic: /usr/lib/libatomic.so.1.2.0
+FILERPROVIDES:/usr/lib/libatomic.so.1.2.0:libatomic:  libatomic.so.1(LIBATOMIC_1.0) libatomic.so.1(LIBATOMIC_1.1) libatomic.so.1(LIBATOMIC_1.1) libatomic.so.1(LIBATOMIC_1.2) libatomic.so.1(LIBATOMIC_1.2) libatomic.so.1
+FILERDEPENDSFLIST:libatomic: /usr/lib/libatomic.so.1.2.0
+FILERDEPENDS:/usr/lib/libatomic.so.1.2.0:libatomic:  libc.so.6(GLIBC_2.4) libc.so.6 rtld(GNU_HASH)
+PKGSIZE:libatomic: 13626

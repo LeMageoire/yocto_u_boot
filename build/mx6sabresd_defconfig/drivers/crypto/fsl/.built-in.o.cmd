@@ -1,0 +1,1 @@
+cmd_drivers/crypto/fsl/built-in.o :=  rm -f drivers/crypto/fsl/built-in.o; arm-poky-linux-gnueabi-ar cDPrsT drivers/crypto/fsl/built-in.o drivers/crypto/fsl/sec.o drivers/crypto/fsl/jr.o drivers/crypto/fsl/fsl_hash.o drivers/crypto/fsl/jobdesc.o drivers/crypto/fsl/error.o

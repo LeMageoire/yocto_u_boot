@@ -1,0 +1,1 @@
+cmd_drivers/video/imx/built-in.o :=  rm -f drivers/video/imx/built-in.o; arm-poky-linux-gnueabi-ar cDPrsT drivers/video/imx/built-in.o drivers/video/imx/mxc_ipuv3_fb.o drivers/video/imx/ipu_common.o drivers/video/imx/ipu_disp.o

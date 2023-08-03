@@ -1,0 +1,14 @@
+PN: linux-libc-headers
+PV: 5.16
+PR: r0
+PKGV: 5.16
+PKGR: r0
+LICENSE: GPL-2.0-only
+DESCRIPTION:linux-libc-headers-staticdev: Designed to maintain an Application Programming Interface (API) stable version of the Linux headers  This package contains static libraries for software development.
+SUMMARY:linux-libc-headers-staticdev: Sanitized set of kernel headers for the C library's use - Development files (Static Libraries)
+RDEPENDS:linux-libc-headers-staticdev: linux-libc-headers-dev (= 5.16-r0)
+SECTION:linux-libc-headers-staticdev: devel
+PKG:linux-libc-headers-staticdev: linux-libc-headers-staticdev
+FILES:linux-libc-headers-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/linux-libc-headers/*.a
+FILES_INFO:linux-libc-headers-staticdev: {}
+PKGSIZE:linux-libc-headers-staticdev: 0

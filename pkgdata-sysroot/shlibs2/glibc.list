@@ -1,0 +1,14 @@
+ld-linux-armhf.so.3:/lib:2.35
+libBrokenLocale.so.1:/lib:2.35
+libanl.so.1:/lib:2.35
+libc.so.6:/lib:2.35
+libdl.so.2:/lib:2.35
+libm.so.6:/lib:2.35
+libnsl.so.1:/lib:2.35
+libnss_compat.so.2:/lib:2.35
+libnss_dns.so.2:/lib:2.35
+libnss_files.so.2:/lib:2.35
+libpthread.so.0:/lib:2.35
+libresolv.so.2:/lib:2.35
+librt.so.1:/lib:2.35
+libutil.so.1:/lib:2.35

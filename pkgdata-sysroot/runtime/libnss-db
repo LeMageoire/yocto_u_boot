@@ -1,0 +1,21 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION: The GNU C Library is used as the system C library in most systems with the Linux kernel.
+SUMMARY: GLIBC (GNU C Library)
+RDEPENDS:libnss-db: glibc-utils glibc (>= 2.35)
+RPROVIDES:libnss-db:  libnss-db (=2.35)
+SECTION: libs
+PKG:libnss-db: libnss-db2
+FILES:libnss-db: /lib/libnss_db.so.* /lib/libnss_db-*.so /var/db/Makefile /var/db/makedbs.sh
+FILES_INFO:libnss-db: {"/lib/libnss_db.so.2": 26092, "/var/db/Makefile": 5291, "/var/db/makedbs.sh": 4453}
+pkg_postinst:libnss-db: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:libnss-db: /lib/libnss@underscore@db.so.2
+FILERPROVIDES:/lib/libnss@underscore@db.so.2:libnss-db:  libnss_db.so.2(GLIBC_PRIVATE) libnss_db.so.2
+FILERDEPENDSFLIST:libnss-db: /lib/libnss@underscore@db.so.2 /var/db/makedbs.sh
+FILERDEPENDS:/lib/libnss@underscore@db.so.2:libnss-db:  libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_PRIVATE) libc.so.6
+FILERDEPENDS:/var/db/makedbs.sh:libnss-db:  /bin/sh
+PKGSIZE:libnss-db: 35836

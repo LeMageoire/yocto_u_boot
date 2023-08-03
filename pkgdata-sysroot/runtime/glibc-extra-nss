@@ -1,0 +1,20 @@
+PN: glibc
+PV: 2.35
+PR: r0
+PKGV: 2.35
+PKGR: r0
+LICENSE: GPL-2.0-only & LGPL-2.1-only
+DESCRIPTION:glibc-extra-nss: glibc: nis, nisplus and hesiod search services.
+SUMMARY:glibc-extra-nss: hesiod, NIS and NIS+ nss libraries
+RDEPENDS:glibc-extra-nss: glibc (>= 2.35)
+RPROVIDES:glibc-extra-nss: eglibc-extra-nss glibc-extra-nss (=2.35)
+SECTION: libs
+PKG:glibc-extra-nss: libc6-extra-nss
+FILES:glibc-extra-nss: /lib/libnss_*-*.so /lib/libnss_*.so.*
+FILES_INFO:glibc-extra-nss: {"/lib/libnss_hesiod.so.2": 13704}
+pkg_postinst:glibc-extra-nss: #!/bin/sh\nset -e\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST:glibc-extra-nss: /lib/libnss@underscore@hesiod.so.2
+FILERPROVIDES:/lib/libnss@underscore@hesiod.so.2:glibc-extra-nss:  libnss_hesiod.so.2(GLIBC_PRIVATE) libnss_hesiod.so.2
+FILERDEPENDSFLIST:glibc-extra-nss: /lib/libnss@underscore@hesiod.so.2
+FILERDEPENDS:/lib/libnss@underscore@hesiod.so.2:glibc-extra-nss:  libresolv.so.2(GLIBC_2.9) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_PRIVATE) libc.so.6(GLIBC_2.4) libresolv.so.2 libc.so.6
+PKGSIZE:glibc-extra-nss: 13704

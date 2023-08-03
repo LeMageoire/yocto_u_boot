@@ -1,0 +1,1 @@
+cmd_u-boot.img := ./tools/mkimage -f auto -A arm -T firmware -C none -O u-boot -a 0x17800000 -e 0x17800000 -p 0x0 -n "U-Boot 2022.10+fslc+gcbd7eb17ac for mx6sabresd board" -E  -b arch/arm/dts/imx6q-sabresd.dtb -b arch/arm/dts/imx6qp-sabresd.dtb -b arch/arm/dts/imx6dl-sabresd.dtb  -d u-boot-nodtb.bin u-boot.img >/dev/null  && cat /dev/null

@@ -1,0 +1,17 @@
+PN: libgcc
+PV: 11.3.0
+PR: r0
+PKGV: 11.3.0
+PKGR: r0
+LICENSE:libgcc-dev: GPL-3.0-with-GCC-exception
+DESCRIPTION:libgcc-dev: The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D, as well as libraries for these languages (libstdc++,...). GCC was originally written as the compiler for the GNU operating system.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY:libgcc-dev: GNU cc and gcc C compilers - Development files
+RDEPENDS:libgcc-dev: libgcc (= 11.3.0-r0)
+RPROVIDES:libgcc-dev:  libgcc-dev (=11.3.0)
+RRECOMMENDS:libgcc-dev: glibc-dev
+SECTION:libgcc-dev: devel
+PKG:libgcc-dev: libgcc-s-dev
+ALLOW_EMPTY:libgcc-dev: 1
+FILES:libgcc-dev:     /lib/libgcc*.so          /usr/lib/arm-poky-linux-gnueabi/11.3.0*     /usr/lib/arm-poky* 
+FILES_INFO:libgcc-dev: {"/lib/libgcc_s.so": 132, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/crtbegin.o": 2112, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/crtbeginS.o": 2456, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/crtbeginT.o": 2468, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/crtend.o": 1232, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/crtendS.o": 1232, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/crtfastmath.o": 2892, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/libgcc.a": 10287950, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/libgcc_eh.a": 85272, "/usr/lib/arm-poky-linux-gnueabi/11.3.0/libgcov.a": 242040}
+PKGSIZE:libgcc-dev: 10627786
